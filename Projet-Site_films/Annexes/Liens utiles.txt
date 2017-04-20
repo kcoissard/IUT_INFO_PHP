@@ -1,0 +1,64 @@
+http://iutdoua-webetu.univ-lyon1.fr/~p1207997/
+
+https://iutdoua-webetu.univ-lyon1.fr/phpMyAdmin/  --> p120... + PUC
+
+http://liris.cnrs.fr/~pdevetto/enseignement/module-php/bdd.html#projet-1-site-de-films
+
+https://openclassrooms.com/forum/sujet/inserer-les-donnees-d-une-table-mysql-dans-un-tableau-htm-64294
+
+
+
+JOINTURE SQL
+
+SELECT *
+FROM table1
+INNER JOIN table2
+ON table1.ID_CHAMP1 = table2.ID_CHAMP2.
+
+
+
+
+
+
+SELECT nom, prenom
+FROM `ACTEURS`
+INNER JOIN `CASTING` ON ACTEURS.id_acteurs = CASTING.id_acteurs
+INNER JOIN FILMS ON FILMS.id_films = CASTING.id_films
+WHERE FILMS.intitule = 'Zootopie'
+ORDER BY ACTEURS.nom
+
+
+
+
+
+echo $donnees['nom_film'];
+echo $donnees['annee_film'];
+echo $donnees['score'];
+
+
+
+<?php
+	// lecture et affichage des résultats : 1 résultat par ligne.
+    while($row = mysql_fetch_array($select)) 
+	{
+?>
+		<tr>
+			<td><?php echo $donnees['intitule'];?></td>
+			<td><?php echo $donnees['annee_film'];?></td>
+			<td><?php echo $donnees['score'];?></td>
+			<td><?php echo "Voir";?></td>
+		</tr>
+<?php
+    } // fin while
+?>
+
+
+
+
+
+<?php
+
+ 
+// on libère le résultat
+mysql_free_result($result);
+?>

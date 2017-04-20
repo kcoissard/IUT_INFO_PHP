@@ -1,0 +1,76 @@
+body {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    text-align: center;
+
+}
+
+a:hover{
+	color:yellow;
+}
+
+h1{
+	white-space:nowrap;
+	width: 200px;
+	margin-right: 50%;
+	margin-left: 40%;
+	background-color: rgb(35,41,39);
+	color:yellow;
+}
+
+h3{
+	white-space:nowrap;
+	width: 200px;
+	margin-right: 50%;
+	margin-left: 40%;
+	background-color: rgb(35,41,39);
+	color:yellow;
+}
+
+/*design pattern*/
+html{
+	color:orange;
+	text-shadow : 2px 1px black;
+	background: 
+linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
+linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
+linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+
+linear-gradient(324deg, #232927 4%,   transparent 4%) -20px 93px,
+linear-gradient( 36deg, #232927 4%,   transparent 4%) 80px 93px,
+linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+background-color: #232927;
+background-size: 100px 100px;
+}
+
+table{
+	background-color: rgb(35,41,39);
+	margin:auto;
+}
+
+p{
+	width:250px;
+	margin-right: 50%;
+	margin-left: 40%;
+	background-color: rgb(35,41,39);
+}
+
+td { 
+    padding: 5px;
+}
+
+tr{
+	text-align: auto;
+	margin:auto;
+}
